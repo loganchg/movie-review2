@@ -13,13 +13,13 @@ function Cards() {
               src='images/img-9.jpg'
               text='Black Panther'
               label='Sci-Fi'
-              path='/movies'
+              path='/blackpanther'
             />
             <CardItem
               src='images/img-2.jpg'
               text='Avengers: Infinity War'
               label='Sci-Fi'
-              path='/movies'
+              path='/avengers'
             />
           </ul>
           <ul className='cards__items'>

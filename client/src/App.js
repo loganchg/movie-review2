@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Movies from './components/pages/Movies';
 import Addmovies from './components/pages/Addmovies';
 import SignUp from './components/pages/SignUp';
-
+import Blackpanther from './components/pages/Blackpanther';
+import Avengers from './components/pages/Avengers';
 
 
 
@@ -21,6 +22,8 @@ function App() {
           <Route path='/movies' component={Movies} /> 
           <Route path='/addmovies' component={Addmovies} />
           <Route path='/sign-up' component={SignUp} />
+          <Route path='/blackpanther' component={Blackpanther} />
+          <Route path='/avengers' component={Avengers} />
           
 
         </Switch>

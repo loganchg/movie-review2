@@ -7,7 +7,9 @@
 
 .home,
 .movies,
-.addmovies {
+.addmovies,
+.blackpanther,
+.avengers {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -37,3 +39,19 @@
   color: #fff;
 }
 
+.blackpanther { background-image: url('/images/img-9.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+font-size: 100px;
+}
+
+.avengers{ background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 100px;
+  }
+  
