@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './SignUp.css'
+import Validation from './Validation';
 
 
 export default function SignUp() {
@@ -10,6 +11,8 @@ export default function SignUp() {
     password:'',
   })
 
+ const [errors, setErrors] = useState({})
+
   const handleChange= (e) => {
     setValues({      
       ...values,
@@ -19,6 +22,7 @@ export default function SignUp() {
 
   const handleFormSubmit = (e) =>{
     e.preventDefault();
+    setErrors(Validation(values))
   }
 
 
@@ -38,6 +42,7 @@ export default function SignUp() {
                       value={values.name}
                       onChange={handleChange}
                     />
+                    {errors.name && <p className='error'>{errors.name}</p>}
                 </div>
                 <div className="email">
                     <label className="label">Email</label>
@@ -48,6 +53,7 @@ export default function SignUp() {
                       value={values.email}
                       onChange={handleChange} 
                     />
+                    {errors.email && <p className='error'>{errors.email}</p>}
                 </div>
                 <div className="password">
                     <label className="label">Password</label>
@@ -58,6 +64,7 @@ export default function SignUp() {
                       value={values.password}
                       onChange={handleChange} 
                       />
+                      {errors.password && <p className='error'>{errors.password}</p>}
                 </div>
                 <div>
                   <button className="submit" onClick={handleFormSubmit}>
