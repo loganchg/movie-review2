@@ -33,13 +33,13 @@ function Cards() {
               src='images/img-4.jpg'
               text='Ms. Marvel'
               label='Sci-Fi'
-              path='/movies'
+              path='/msmarvel'
             />
             <CardItem
               src='images/img-6.jpg'
               text='007: No Time To Die'
               label='Action'
-              path= '/movies'
+              path='/nttd'
             />
           </ul>
         </div>

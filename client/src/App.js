@@ -9,6 +9,9 @@ import SignUp from './components/pages/SignUp';
 import Blackpanther from './components/pages/Blackpanther';
 import Avengers from './components/pages/Avengers';
 import Uncharted from './components/pages/Uncharted';
+import Msmarvel from './components/pages/Msmarvel';
+import Nttd from './components/pages/Nttd';
+
 
 
 
@@ -26,7 +29,8 @@ function App() {
           <Route path='/blackpanther' component={Blackpanther} />
           <Route path='/avengers' component={Avengers} />
           <Route path='/uncharted' component={Uncharted} />
-          
+          <Route path='/msmarvel' component={Msmarvel} />
+          <Route path='/nttd' component={Nttd} />
 
         </Switch>
       </Router>

@@ -10,7 +10,9 @@
 .addmovies,
 .blackpanther,
 .avengers,
-.uncharted {
+.uncharted,
+.msmarvel,
+.nttd{
   display: flex;
   height: 90vh;
   align-items: center;
@@ -63,3 +65,19 @@ font-size: 100px;
     color: white;
     font-size: 100px;
     }
+
+    .msmarvel{ background-image: url('/images/img-4.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      font-size: 100px;
+      }
+
+    .nttd{ background-image: url('/images/img-6.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 100px;
+        }
