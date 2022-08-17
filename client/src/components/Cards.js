@@ -27,7 +27,7 @@ function Cards() {
               src='images/img-3.jpg'
               text='Uncharted'
               label='Adventure'
-              path='/movies'
+              path='/uncharted'
             />
             <CardItem
               src='images/img-4.jpg'

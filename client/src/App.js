@@ -8,6 +8,7 @@ import Addmovies from './components/pages/Addmovies';
 import SignUp from './components/pages/SignUp';
 import Blackpanther from './components/pages/Blackpanther';
 import Avengers from './components/pages/Avengers';
+import Uncharted from './components/pages/Uncharted';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/sign-up' component={SignUp} />
           <Route path='/blackpanther' component={Blackpanther} />
           <Route path='/avengers' component={Avengers} />
+          <Route path='/uncharted' component={Uncharted} />
           
 
         </Switch>
