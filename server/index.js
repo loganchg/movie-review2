@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors())
 
 const CONNECTION_URL ='mongodb+srv://JAGx9:Moviereview123@cluster0.havbrtt.mongodb.net/?retryWrites=true&w=majority';
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5001
 
 mongoose.connect(CONNECTION_URL)
     .then(()=> app.listen(PORT, () => console.log(`Server running: ${PORT}`)))
