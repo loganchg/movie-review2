@@ -12,13 +12,12 @@ h1 {
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .cards__wrapper {
   position: relative;
-  display: grid;
   margin: 75px 0 50px;
   
 }
