@@ -21,8 +21,6 @@ function App() {
           <Route path='/movies' component={Movies} /> 
           <Route path='/addmovies' component={Addmovies} />
           <Route path='/sign-up' component={SignUp} />
-          
-
         </Switch>
       </Router>
     

@@ -39,7 +39,7 @@ function Cards() {
               src='images/img-6.jpg'
               text='007: No Time To Die'
               label='Action'
-              path= '/movies'
+              path='/movies'
             />
           </ul>
         </div>
