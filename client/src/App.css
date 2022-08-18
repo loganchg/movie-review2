@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.movies,
+.addmovies,
+.blackpanther,
+.avengers,
+.uncharted,
+.msmarvel,
+.nttd{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.movies {
+  background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.addmovies {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  color: #fff;
+}
+
+.blackpanther { background-image: url('/images/img-9.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+font-size: 100px;
+}
+
+.avengers{ background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 100px;
+  }
+  
+  .uncharted{ background-image: url('/images/img-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 100px;
+    }
+
+    .msmarvel{ background-image: url('/images/img-4.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      font-size: 100px;
+      }
+
+    .nttd{ background-image: url('/images/img-6.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 100px;
+        }
