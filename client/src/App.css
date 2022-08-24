@@ -50,14 +50,8 @@ color: white;
 font-size: 100px;
 }
 
-.avengers{ background-image: url('/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  font-size: 100px;
-  }
-  
+
+
   .uncharted{ background-image: url('/images/img-3.jpg');
     background-position: center;
     background-size: cover;
@@ -81,3 +75,13 @@ font-size: 100px;
         color: white;
         font-size: 100px;
         }
+
+    
+    .avengers{ background-image: url('/images/img-2.jpg');
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          color: white;
+          font-size: 100px;
+          }
+          
