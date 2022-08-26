@@ -1,8 +1,13 @@
 import React from 'react';
 import '../../App.css';
+import Forms from '../PostingForm/Forms';
 
 
 export default function Nttd() {
-  return < h1 className='nttd'>007: No Time To Die</h1>
-  ;
+  return (
+  <div>
+    < h1 className='nttd'> </h1>
+    <Forms/>
+  </div>
+  )
 }

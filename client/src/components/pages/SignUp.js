@@ -1,78 +1,64 @@
 import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import './SignUp.css'
-import Validation from './Validation';
+// import Validation from './Validation';
 
 
 export default function SignUp() {
 
-  const [values, setValues] = useState({
-    name:'',
-    email:'',
-    password:'',
-  })
+  const history = useHistory()
 
- const [errors, setErrors] = useState({})
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password,setPassword] = useState('')
 
-  const handleChange= (e) => {
-    setValues({      
-      ...values,
-      [e.target.name]: e.target.value
+  async function registerUser(event) {
+    event.preventDefault()
+    const response = await fetch('http://localhost:5001/api/register',{
+    method: 'POST',  
+    headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+      name,
+      email,
+      password
+      }),
     })
-  }
 
-  const handleFormSubmit = (e) =>{
-    e.preventDefault();
-    setErrors(Validation(values))
+    const data = await response.json()
+    
+    if(data.status === 'ok') {
+      history.push('/login')
+    }
   }
-
 
   return ( 
-    <div className="container">
-        <div className="app-wrapper">
-            <div>
-                <h2 className="title">Create Account</h2>
-            </div>
-            <form className="form-wrapper">
-                <div className="name">
-                    <label className="label">Name</label>
-                    <input 
-                      type="text" 
-                      className="input" 
-                      name='name' 
-                      value={values.name}
-                      onChange={handleChange}
-                    />
-                    {errors.name && <p className='error'>{errors.name}</p>}
-                </div>
-                <div className="email">
-                    <label className="label">Email</label>
-                    <input 
-                      type="email" 
-                      className="input" 
-                      name='email' 
-                      value={values.email}
-                      onChange={handleChange} 
-                    />
-                    {errors.email && <p className='error'>{errors.email}</p>}
-                </div>
-                <div className="password">
-                    <label className="label">Password</label>
-                    <input 
-                      type="password"  
-                      className="input" 
-                      name='password' 
-                      value={values.password}
-                      onChange={handleChange} 
-                      />
-                      {errors.password && <p className='error'>{errors.password}</p>}
-                </div>
-                <div>
-                  <button className="submit" onClick={handleFormSubmit}>
-                    Sign Up
-                  </button>
-                </div>
-            </form>
-        </div>
+    <div>
+      <h1>SignUp For Free!</h1>
+      <form onSubmit={registerUser}>
+        <input 
+        value={name} 
+        onChange={(e) => setName(e.target.value)}
+        type='name'
+        placeholder='Name'
+        />
+        <br/>
+        <input 
+        value={email} 
+        onChange={(e) => setEmail(e.target.value)}
+        type="email" 
+        placeholder='Email'
+        />
+        <br/>
+        <input 
+        value={password} 
+        onChange={(e) => setPassword(e.target.value)}
+        type="password" 
+        placeholder='Password'
+        />
+        <input type="submit" value='SignUp' />
+      </form>
     </div>
   )
 }

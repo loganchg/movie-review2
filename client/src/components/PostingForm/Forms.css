@@ -1,0 +1,47 @@
+
+
+.wrapper{
+    position: inherit;
+    width: 100%;
+    background-color: #3CA7D8;
+
+}
+
+
+.wrapper h2{
+    color: aliceblue;
+}
+
+.form {
+    width: 50%;
+    height: 59px;
+    padding: 15px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border-color: aliceblue;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+
+.submit {
+    margin-left: 30px;
+    width: 20%;
+    height: 35px;
+    background: aliceblue;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #3CA7D8;
+}
+
+.submit:hover {
+    border-color: aliceblue;
+    transition: .5s;
+}

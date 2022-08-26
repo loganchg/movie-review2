@@ -1,8 +1,13 @@
 import React from 'react';
 import '../../App.css';
-
+import Forms from '../PostingForm/Forms';
 
 export default function Msmarvel() {
-  return < h1 className='msmarvel'>Msmarvel</h1>
+  return (
+  <div>
+    < h1 className='msmarvel'>Msmarvel</h1>
+    <Forms/>
+  </div>
+)
 
 }
