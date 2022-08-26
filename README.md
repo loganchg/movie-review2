@@ -4,7 +4,7 @@ We wanted to create a movie review application that people can leave a review fo
 
 How to use the application.
 
-In order to leave a review for your favorite movies, you can click on the review link on the home page. It will navigate you to the log in page. New User can also click on the "Log on" button on the top right column to sign up their account. Clicking the movies containers on the home page will bring you to the movies' individual page which contains their poster image and storyline. If you scroll down to the footer section, you will also find the links that will link you to different social media websites. It will open a new tab so you can share your favorites with your friends.
+In order to leave a review for your favorite movies, you can click on the review link on the home page. It will navigate you to the log in page. New User can also click on the "Log on" button on the top right column to sign up their account. Clicking the movies containers on the home page will bring you to the movies' individual page which contains their poster image and storyline. Under the poster, you will also find a leave review button to add your review to the movie page. If you scroll down to the footer section, you will also find the links that will link you to different social media websites. It will open a new tab so you can share your favorites with your friends.
 
 Lists the technologies used to build the application.
 
