@@ -30,7 +30,7 @@
 }
 
 .addmovies {
-  background-image: url('/images/img-1.jpg');
+  background-color: aquamarine;
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 
 .blackpanther { background-image: url('/images/img-9.jpg');
 background-position: center;
-background-size: cover;
+background-size: 65%;
 background-repeat: no-repeat;
 color: white;
 font-size: 100px;
@@ -52,7 +52,7 @@ font-size: 100px;
 
 .avengers{ background-image: url('/images/img-2.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: 65%;
   background-repeat: no-repeat;
   color: white;
   font-size: 100px;
@@ -60,7 +60,7 @@ font-size: 100px;
   
   .uncharted{ background-image: url('/images/img-3.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 60%;
     background-repeat: no-repeat;
     color: white;
     font-size: 100px;
@@ -68,7 +68,7 @@ font-size: 100px;
 
     .msmarvel{ background-image: url('/images/img-4.jpg');
       background-position: center;
-      background-size: cover;
+      background-size: 65%;
       background-repeat: no-repeat;
       color: white;
       font-size: 100px;
@@ -76,7 +76,7 @@ font-size: 100px;
 
     .nttd{ background-image: url('/images/img-6.jpg');
         background-position: center;
-        background-size: cover;
+        background-size: 65%;
         background-repeat: no-repeat;
         color: white;
         font-size: 100px;
