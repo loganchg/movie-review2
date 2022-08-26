@@ -14,4 +14,4 @@ MongoDB is the data base that we have been using for this project to store the d
 
 Any outstanding bugs or unfinished functionality.
 
-It would be so much nicer if we could create indivdual moview trailers container where people can preview their favorite movies. or a faded video background would be nice to have. Seting up the IMDb API would also a good idea , especially we can obtain more informative materials. Overall, it is a nice experiences that we can combine what we have learnt in the past 8-9 months.
+It would be so much nicer if we could create individual movie trailers container where people can preview their favorite movies. or a faded video background would be nice to have. Setting up the IMDb API would also a good idea , especially we can obtain more informative materials. Overall, it is a nice experiences that we can combine what we have learnt in the past 8-9 months.
