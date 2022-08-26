@@ -10,7 +10,11 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "express": "^4.18.1",
+<<<<<<< HEAD
     "jsonwebtoken": "^8.5.1",
+=======
+    "nodejs": "^0.0.0",
+>>>>>>> 90ce4d271710ac0f360cbac598b1e8d40359ad22
     "nodemon": "^2.0.19",
     "react": "^16.13.1",
     "react-bootstrap": "^2.5.0",
