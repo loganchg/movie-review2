@@ -1,0 +1,87 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moviereview2-dev-190652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::457692068041:role/amplify-moviereview2-dev-190652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::457692068041:role/amplify-moviereview2-dev-190652-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-moviereview2-dev-190652-deployment",
+      "UnauthRoleName": "amplify-moviereview2-dev-190652-unauthRole",
+      "StackName": "amplify-moviereview2-dev-190652",
+      "StackId": "arn:aws:cloudformation:us-east-1:457692068041:stack/amplify-moviereview2-dev-190652/c0d64f40-24e3-11ed-97f6-0e808b64cab5",
+      "AmplifyAppId": "d3mh77freafhzp"
+    }
+  },
+  "function": {
+    "moviereview29fd9f4da": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2022-08-26T02:11:37.536Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-08-26T02:11:37.564Z",
+      "distZipFilename": "moviereview29fd9f4da-596a50365958635a7053-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-moviereview2-dev-190652-deployment",
+        "s3Key": "amplify-builds/moviereview29fd9f4da-596a50365958635a7053-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moviereview2-dev-190652-deployment/amplify-cfn-templates/function/moviereview29fd9f4da-cloudformation-template.json",
+        "logicalId": "functionmoviereview29fd9f4da"
+      },
+      "lastPushTimeStamp": "2022-08-26T02:13:44.677Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:457692068041:function:moviereview29fd9f4da-dev",
+        "Name": "moviereview29fd9f4da-dev",
+        "LambdaExecutionRole": "moviereview2LambdaRoleb4d74c60-dev"
+      },
+      "lastPushDirHash": "0346qT2fuitelLNHtuXDfw51iYw="
+    }
+  },
+  "api": {
+    "moviereview": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "moviereview29fd9f4da",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moviereview2-dev-190652-deployment/amplify-cfn-templates/api/moviereview-cloudformation-template.json",
+        "logicalId": "apimoviereview"
+      },
+      "lastPushTimeStamp": "2022-08-26T02:13:44.677Z",
+      "output": {
+        "ApiName": "moviereview",
+        "RootUrl": "https://ub09jxpo28.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "ub09jxpo28"
+      },
+      "lastPushDirHash": "zEl9rU2z6NdaJZypo0LnFFxPjO8="
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moviereview2-dev-190652-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      },
+      "lastPushTimeStamp": "2022-08-26T02:13:44.677Z",
+      "output": {
+        "S3BucketSecureURL": "https://moviereview2-20220825191055-hostingbucket-dev.s3.amazonaws.com",
+        "WebsiteURL": "http://moviereview2-20220825191055-hostingbucket-dev.s3-website-us-east-1.amazonaws.com",
+        "Region": "us-east-1",
+        "HostingBucketName": "moviereview2-20220825191055-hostingbucket-dev"
+      },
+      "lastPushDirHash": "UDQaQq4Qos8rIL7y5k12SmoI9sE="
+    }
+  }
+}

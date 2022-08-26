@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moviereview2-dev-190652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::457692068041:role/amplify-moviereview2-dev-190652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::457692068041:role/amplify-moviereview2-dev-190652-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-moviereview2-dev-190652-deployment",
+      "UnauthRoleName": "amplify-moviereview2-dev-190652-unauthRole",
+      "StackName": "amplify-moviereview2-dev-190652",
+      "StackId": "arn:aws:cloudformation:us-east-1:457692068041:stack/amplify-moviereview2-dev-190652/c0d64f40-24e3-11ed-97f6-0e808b64cab5",
+      "AmplifyAppId": "d3mh77freafhzp"
+    },
+    "categories": {
+      "function": {
+        "moviereview29fd9f4da": {
+          "deploymentBucketName": "amplify-moviereview2-dev-190652-deployment",
+          "s3Key": "amplify-builds/moviereview29fd9f4da-596a50365958635a7053-build.zip"
+        }
+      }
+    }
+  }
+}

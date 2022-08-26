@@ -62,7 +62,7 @@ const Welcome = () => {
 
     return (
     <div>
-        <h1>{quote || "No quote found"}</h1>
+        <h1>Welcome to the Review Page: {quote || "No quote found"}</h1>
         <form onSubmit={updateQuote}>
             <input 
                 type="text"

@@ -8,7 +8,6 @@ const Forms = () => {
   
     <div className='wrapper'>
         <h2>Leave Your Review</h2>
-
     </div>
 
     );
